@@ -1,8 +1,17 @@
 import java.util.Scanner;
-
+/**
+ * Clase que agrupa todos los numeros primos de 1 a max
+ * @version 1.1, 06/03/2023
+ * @author Laslau Doru Mihai
+ */
 
 public class Criba {
 
+    /**
+     * Metodo que genera todos los numeros primos (de 1 a max)
+     * @param max (valor introducido en teclado)
+     * @return primos si max >= 2 si no, return new int[0]
+     */
     public static int[] generarPrimos(int max) {
 
         // 0 y 1 no son números primos
@@ -43,7 +52,10 @@ public class Criba {
         }
     }
 
-
+    /**
+     * Metodo que imprime los numeros primos
+     * @param args es una lista de argumentos
+     */
     public static void main(String[] args) {
         int max;
         //Solicita dato por teclado y lo registra
